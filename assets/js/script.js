@@ -102,16 +102,20 @@ var retVal = "";
     //creating a charset with the characterschoice arrays
     var charset = charactersChoicearr.slice("");
 
+    //checks charset
+    console.log(charset);
     
+    //the math part
+    //for loop sets i to 0, the array charsets length is set to n then tells i is less than the password length
+    for(var i = 0, n = charset.length; i < parseInt(passwordLength); ++i) {
+        //random characters chosen from charset. adding it to retval
+        retVal += charset[Math.floor(Math.random() * n)];
+    }
+    //check to see if it works, 
+    console.log(retVal);
    }  
-
+   return retVal;
 }
-
-
-//To Do: create prompts
-//To Do: create password length prompt, lower, upper, character, and number prompts
-
-
 
 // Write password to the #password input
 function writePassword() {
