@@ -22,11 +22,27 @@ var charactersChoicearr = [];
 //string with random password characters, created at end with users selection
 var retVal = "";
 
+ //while loop to loop through the prompts
+ while(parseInt(passwordLength) < 8 || parseInt(passwordLength) > 128) {
+    passwordLength = prompt("Please enter the length you want your password to be(password has to be no less than 8 and no more than 128): ");
+    if(parseInt(passwordLength) < 8 || parseInt(passwordLength) > 128){
+        passwordLength = prompt("Length that was entered, was either to short (<8) or to long(>128), Enter number a valid number between 8 and 128: ");
+    } else if(passwordLength == "" || Number.isNaN(parseInt(passwordLength))) {
+        passwordLength = prompt("Enter a valid number between 8 and 128: ");
+    } 
+    //checked that it is working
+    console.log(passwordLength);
+   
+    
+   }  
+
+}
+
 
 //To Do: create prompts
 //To Do: create password length prompt, lower, upper, character, and number prompts
 
-}
+
 
 // Write password to the #password input
 function writePassword() {
