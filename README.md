@@ -56,6 +56,7 @@ When you click it you will be prompted with a series of questions:
 Below is a gif showing how the prompts work. 
 
  ![Main Page](assets/images/prompts.gif)
+ <img src="assets/images/prompts.gif" width="img-fluid" height="img-fluid"/>
 
 Not selecting a number properly: 
 
