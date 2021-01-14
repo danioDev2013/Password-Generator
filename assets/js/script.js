@@ -37,7 +37,7 @@ var retVal = "";
         passwordLength = prompt("Enter a valid number between 8 and 128: ");
     } 
     //check that it is working
-    console.log(passwordLength);
+    //console.log(passwordLength);
 
     //prompts character types: lowercase, uppercase, numbers, special characters
     //prompts user if they would like lowercase letters, y and n are used, creates a variable lowercasechoice
@@ -69,7 +69,7 @@ var retVal = "";
            charactersChoicearr =  charactersChoicearr.concat(upperCase);
        } 
        //checks to see if working
-       console.log(charactersChoicearr);
+       //console.log(charactersChoicearr);
     
     //numbers user choice, creates the variable for it
     var numbersChoice = prompt("Would you like numbers in your new password(enter y for yes or n for no)? ");
@@ -84,7 +84,7 @@ var retVal = "";
            charactersChoicearr = charactersChoicearr.concat(numbersPass);
        }
        //checks if working
-       console.log(charactersChoicearr);
+       //console.log(charactersChoicearr);
     
     //special character users choice, creates the variable for it
     var specialCharacterschoice = prompt("Would you like a symbol/special character in your new password(enter y for yes or n for no)? ");
@@ -99,10 +99,10 @@ var retVal = "";
           charactersChoicearr = charactersChoicearr.concat(specialCharacters);
         } 
         //checks if it is working. looks at the charactersarr in console log
-        console.log(charactersChoicearr);
+        //console.log(charactersChoicearr);
 
     if(charactersChoicearr == "" || charactersChoicearr == null) {
-        console.log("hi, working")
+        //console.log("hi, working")
         alert("Didn't select anything, try again.");
         return;
     }
@@ -114,7 +114,7 @@ var retVal = "";
 
 
     //checks charset
-    console.log(charset);
+    //console.log(charset);
    
     //the math part
     //for loop sets i to 0, the array charsets length is set to n then tells i is less than the password length
@@ -123,7 +123,7 @@ var retVal = "";
         retVal += charset[Math.floor(Math.random() * n)];
     }
     //check to see if it works, 
-    console.log(retVal);
+    //console.log(retVal);
    }  
    return retVal;
 }
