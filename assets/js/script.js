@@ -102,7 +102,7 @@ var retVal = "";
         console.log(charactersChoicearr);
 
     if(charactersChoicearr == "" || charactersChoicearr == null) {
-        console.log("hi")
+        console.log("hi, working")
         alert("Didn't select anything, try again.");
         return;
     }
