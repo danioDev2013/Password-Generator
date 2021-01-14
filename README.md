@@ -54,17 +54,17 @@ When you click it you will be prompted with a series of questions:
 * If you don't select any of the lowercase, uppercase, numbers, and symbols, it will alert you no selction was made. 
 
 Below is a gif showing how the prompts work. 
-
- ![Main Page](assets/images/prompts.gif)
  <img src="assets/images/prompts.gif" width="100%"/>
 
 Not selecting a number properly: 
 
-![Main Page](assets/images/wrong_numb.gif)
+ <img src="assets/images/wrong_numb.gif" width="100%" alt="wrong number"/>
+
 
 Not selecting a choice:
 
-![Main Page](assets/images/noselections.gif)
+ <img src="assets/images/noselections.gif" width="100%" alt="no selections"/>
+
 
 ## License
 ---
