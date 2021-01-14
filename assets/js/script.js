@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+
 //function for generate password in the function write password
 function generatePassword() {
 //array for uppercase letters, lowercase letters, numbers, and special characters
@@ -22,6 +23,7 @@ var charactersChoicearr = [];
 //string with random password characters, created at end with users selection
 var retVal = "";
 
+
  //while loop to loop through the prompts
  while(parseInt(passwordLength) < 8 || parseInt(passwordLength) > 128) {
      //prompts user to enter number
@@ -37,13 +39,13 @@ var retVal = "";
     //check that it is working
     console.log(passwordLength);
 
-    //promts character types: lowercase, uppercase, numbers, special characters
+    //prompts character types: lowercase, uppercase, numbers, special characters
     //prompts user if they would like lowercase letters, y and n are used, creates a variable lowercasechoice
     var lowerCasechoice = prompt("Would you like lowercase letters in your new password(enter y for yes or n for no)? ");
     //changes answer to lowercase 
     lowerCasechoice = lowerCasechoice.toLowerCase();
         //checks to see if it is the right choices y and n
-       if (!userAnswerno.includes(lowerCasechoice) && !userAnsweryes.includes(lowerCasechoice)) {
+       if(!userAnswerno.includes(lowerCasechoice) && !userAnsweryes.includes(lowerCasechoice)) {
           alert("Not a choice");
           //if not then reprompts user
           lowerCasechoice = prompt("Would you like lowercase letters in your new password(enter y for yes or n for no)? ");
@@ -59,11 +61,11 @@ var retVal = "";
     var upperCasechoice = prompt("Would you like uppercase letters in your new password(enter y for yes or n for no)? ");
     //changes users choice to lowercase
     upperCasechoice = upperCasechoice.toLowerCase();
-       if (!userAnswerno.includes(upperCasechoice) && !userAnsweryes.includes(upperCasechoice)) {
+       if(!userAnswerno.includes(upperCasechoice) && !userAnsweryes.includes(upperCasechoice)) {
            alert("Not a choice");
            upperCasechoice = prompt("Would you like uppercase letters in your new password(y for yes or n for no)? ");
        //adds the uppercase from the array above to the characterschoice if y
-        } else if(upperCasechoice == userAnsweryes) {
+        } else if(upperCasechoice === userAnsweryes) {
            charactersChoicearr =  charactersChoicearr.concat(upperCase);
        } 
        //checks to see if working
@@ -74,11 +76,11 @@ var retVal = "";
     //changes to lowercase
     numbersChoice = numbersChoice.toLowerCase();
        //checks if y or n, if not reprompts
-       if (!userAnswerno.includes(numbersChoice) && !userAnsweryes.includes(numbersChoice)) {
+       if(!userAnswerno.includes(numbersChoice) && !userAnsweryes.includes(numbersChoice)) {
            alert("Not a choice");
            numbersChoice = prompt("Would you like numbers in your new password(enter y for yes or n for no)? ")
         //checks if y, if it is then concats(adds) the numbers from the array above, to characterschoice arr
-        } else if(numbersChoice == userAnsweryes) {
+        } else if(numbersChoice === userAnsweryes) {
            charactersChoicearr = charactersChoicearr.concat(numbersPass);
        }
        //checks if working
@@ -89,22 +91,30 @@ var retVal = "";
     //changes to lowercase
     specialCharacterschoice = specialCharacterschoice.toLowerCase();
         //checks if y or n, if not reprompts
-        if (!userAnswerno.includes(specialCharacterschoice) && !userAnsweryes.includes(specialCharacterschoice)) {
+        if(!userAnswerno.includes(specialCharacterschoice) && !userAnsweryes.includes(specialCharacterschoice)) {
           alert("Not a choice");
           specialCharacterschoice = prompt("Would you like a symbol/special character in your new password(enter y for yes or n for no)? ");
         //checks if y, if it is then concats(adds) the special characters from the array above, to characterschoice arr
-        } else if(specialCharacterschoice == userAnsweryes) {
+        } else if(specialCharacterschoice === userAnsweryes) {
           charactersChoicearr = charactersChoicearr.concat(specialCharacters);
         } 
         //checks if it is working. looks at the charactersarr in console log
         console.log(charactersChoicearr);
-    
+
+    if(charactersChoicearr == "" || charactersChoicearr == null) {
+        alert("Didn't select anything, try again.");
+        return;
+    }
     //creating a charset with the characterschoice arrays
     var charset = charactersChoicearr.slice("");
 
+    
+    
+
+
     //checks charset
     console.log(charset);
-    
+   
     //the math part
     //for loop sets i to 0, the array charsets length is set to n then tells i is less than the password length
     for(var i = 0, n = charset.length; i < parseInt(passwordLength); ++i) {
