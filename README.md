@@ -38,7 +38,7 @@ URL:
 ---
 Opening the website you will be faced with the password generator box. 
 
-![MainPage](assets/images/MainPage.png)
+![MainPage](assets/images/mainpage.png)
 
 Click the Generate Password button.
  
