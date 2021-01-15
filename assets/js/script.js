@@ -96,7 +96,7 @@ var retVal = "";
           specialCharacterschoice = prompt("Would you like a symbol/special character in your new password(enter y for yes or n for no)? ");
         //checks if y, if it is then concats(adds) the special characters from the array above, to characterschoice arr
         } else if(specialCharacterschoice === userAnsweryes) {
-          charactersChoicearr = charactersChoicearr.concat(specialCharacters);
+               charactersChoicearr = charactersChoicearr.concat(specialCharacters);
         } 
         //checks if it is working. looks at the charactersarr in console log
         //console.log(charactersChoicearr);
