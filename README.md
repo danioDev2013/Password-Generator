@@ -63,7 +63,7 @@ Not selecting a number properly:
 
 Not selecting a choice:
 
- <img src="assets/images/no_selection" width="100%" alt="no selections"/>
+ <img src="assets/images/no_selection.gif" width="100%" alt="no selections"/>
 
 
 ## License
