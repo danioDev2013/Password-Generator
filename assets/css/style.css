@@ -14,9 +14,10 @@ body,
 
 body {
   font-family: sans-serif;
-  background-image: url("../images/backgroundimg1.png");
+  background-image: url(../images/backgroundimg1.png);
   background-size: cover;
 }
+
 h2 {
  color: hsl(0, 0%, 100%);
 }

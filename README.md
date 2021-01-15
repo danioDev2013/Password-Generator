@@ -38,11 +38,11 @@ URL:
 ---
 Opening the website you will be faced with the password generator box. 
 
-![Main Page](assets/images/mainpage.png)
+![Main Page](assets/images/MainPage.png)
 
 Click the Generate Password button.
 
-![Main Page](assets/images/clickmebtn.png)
+![Main Page](assets/images/Click_Here.png)
 
 When you click it you will be prompted with a series of questions:
 * Please enter the length you want your password to be(password has to be no less than 8 and no more than 128):, Enter the number you choose, if you enter incorrectly it will ask again. 
@@ -58,12 +58,12 @@ Below is a gif showing how the prompts work.
 
 Not selecting a number properly: 
 
- <img src="assets/images/wrong_numb.gif" width="100%" alt="wrong number"/>
+ <img src="assets/images/wrong_number.gif" width="100%" alt="wrong number"/>
 
 
 Not selecting a choice:
 
- <img src="assets/images/noselections.gif" width="100%" alt="no selections"/>
+ <img src="assets/images/no_selection" width="100%" alt="no selections"/>
 
 
 ## License
