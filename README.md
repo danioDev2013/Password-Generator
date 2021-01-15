@@ -20,7 +20,7 @@ I wanted to create an easy to use web application, which is responsive and clean
     * concat
     * how if else if comes in handy to check users imput
 
-URL: 
+URL: https://dorley1993.github.io/Password-Generator/
 
 ## Table of Contents
 ---
