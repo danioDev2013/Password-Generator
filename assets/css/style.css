@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-image: url(file:///Users/danio/Documents/Bootcamp/Class/Homework/Turn%20In/Homework3/Password-Generator/assets/images/backgroundimg1.png);
+  background-image: url("file:///Users/danio/Documents/Bootcamp/Class/Homework/Turn%20In/Homework3/Password-Generator/assets/images/backgroundimg1.png");
   background-size: cover;
 }
 h2 {
