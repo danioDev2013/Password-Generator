@@ -41,8 +41,8 @@ Opening the website you will be faced with the password generator box.
 ![Main Page](assets/images/MainPage.png)
 
 Click the Generate Password button.
-
-![Main Page](assets/images/Click_Here.png)
+ 
+![Main Page](assets/images/CLICK_HERE.png)
 
 When you click it you will be prompted with a series of questions:
 * Please enter the length you want your password to be(password has to be no less than 8 and no more than 128):, Enter the number you choose, if you enter incorrectly it will ask again. 
